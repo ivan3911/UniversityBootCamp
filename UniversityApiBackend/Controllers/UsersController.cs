@@ -25,6 +25,7 @@ namespace UniversityApiBackend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
+            
           if (_context.Users == null)
           {
               return NotFound();
